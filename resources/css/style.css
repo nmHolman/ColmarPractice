@@ -1,0 +1,47 @@
+/* GLOBAL */
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/* HEADER */
+header {
+  height: 4rem;
+  padding: 0 1.5rem;
+  align-items: center;
+  background-color: white;
+}
+
+.logo {
+  align-items: center;
+  height: 2rem;
+  font-size: 1.1rem;
+}
+
+.logo-img img {
+  height: 2.1rem;
+}
+
+#colmar {
+  font-weight: bold;
+}
+
+nav {
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav span {
+  margin-left: 1rem;
+  font-size: .9rem;
+}
+
+main {
+  background-color: darkgrey;
+  height: 2000px;
+}
