@@ -1,7 +1,8 @@
 /* GLOBAL */
 html {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #404040;
 }
 
 .container {
@@ -15,19 +16,19 @@ html {
 
 h1  {
   font-size: 3rem;
+  font-family: 'Playfair Display', serif;
   font-weight: bold;
   line-height: 1;
 }
 
 h2 {
   font-size: 2rem;
-  font-weight: bold;
+  font-family: 'Playfair Display', serif;
   line-height: 1.25;
 }
 
 h3 {
   font-size: 1.25rem;
-  font-weight: bold;
   line-height: 1.5;
 }
 
@@ -72,15 +73,15 @@ nav span {
 
 /* MAIN */
 main {
-  border-right: 1px solid #DCDCDC;
-  border-left: 1px solid #DCDCDC;
+  border-right: 1px solid #f5f5f5;
+  border-left: 1px solid #f5f5f5;
 }
 
 
 /* MAIN BANNER */
 .banner {
   padding: 2rem 0;
-  background-color: #DCDCDC;
+  background-color: #f5f5f5;
 }
 
 .banner-img {
@@ -144,7 +145,7 @@ main {
 }
 
 .info-side {
-  border-left: 1px solid  #DCDCDC;
+  border-left: 1px solid  #f5f5f5;
   width: 40%;
   padding: 2rem 0;
 }
@@ -158,8 +159,8 @@ main {
 }
 
 .info-item:nth-child(2) {
-  border-top: 4px solid #DCDCDC;
-  border-bottom: 4px solid #DCDCDC;
+  border-top: 4px solid #f5f5f5;
+  border-bottom: 4px solid #f5f5f5;
 }
 
 .info-img {
@@ -195,7 +196,7 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 2rem 4.5rem;
-  background-color: #DCDCDC;
+  background-color: #f5f5f5;
 }
 
 .courses-title {
