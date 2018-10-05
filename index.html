@@ -13,7 +13,7 @@
 <body>
 
   <!-- HEADER SECTION -->
-  <header class="flex-container">
+  <header class="flex-container container">
     <!-- LOGO -->
     <div class="logo flex-container">
       <div class="logo-img">
@@ -33,7 +33,7 @@
   </header>
 
   <!-- MAIN SECTION -->
-  <main>
+  <main class="container">
     <!-- MAIN BANNER -->
     <section class="flex-container banner">
       <div class="banner-img">
@@ -41,16 +41,58 @@
       </div>
       <div class="banner-content flex-container">
         <h1>Learn something new everyday</h1>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-        <a href="#">
-          <div class="button">Start Here</div>
-        </a>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+        <div class="button" role="button">
+          <span>Start Here</span>
+        </div>
       </div>
     </section>
 
-    <!-- ARTICLES -->
-    <section>
+    <!-- INFORMATION -->
+    <section class="flex-container info">
+      <div class="flex-container info-hero">
+        <div class="info-hero-img">
+          <img src="resources/img/information-main.jpg" alt="Man reading">
+        </div>
+        <div class="info-hero-text">
+          <h2>It doesn't hurt to keep practicing</h2>
+          <p id="quote">"Nulla bibendum quam nec fermentum suscipit. Nullam nec fermentum nisl, sit amet dapibus mi. Morbi dignissim purus sagittis, tempor leo sed, dignissim libero. Morbi efficitur libero vitae magna consectetur, vel fringilla sapien iaculis. Suspendisse vel odio eget dolor efficitur tempor sit amet at enim."</p>
+          <p id="cite">Emanuel, Sr Strategist &#64; Hiring.com</p>
+        </div>
+      </div>
+      <div class="info-side">
+        <div class="info-item">
+          <div class="info-img">
+            <img src="resources/img/information-orientation.jpg" alt="Orientation picture">
+          </div>
+          <div class="info-text">
+            <h3>Orientation date</h3>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-img">
+            <img src="resources/img/information-campus.jpg" alt="Campus picture">
+          </div>
+          <div class="info-text">
+            <h3>Our Campus</h3>
+            <p>Find a campus near you</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-img">
+            <img src="resources/img/information-guest-lecture.jpg" alt="Oliver Sack picture">
+          </div>
+          <div class="info-text">
+            <h3>Our guest lecturer</h3>
+            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
 
+      </div>
     </section>
 
     <!-- COURSES -->

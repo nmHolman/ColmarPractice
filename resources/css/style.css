@@ -4,19 +4,36 @@ html {
   font-family: sans-serif;
 }
 
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
 .flex-container {
   display: flex;
 }
 
 h1  {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1.25;
 }
 
-h2 {
-  font-size: 1.5rem;
-  line-height: 1.3;
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 /* HEADER */
@@ -53,6 +70,13 @@ nav span {
   font-size: 1rem;
 }
 
+/* MAIN */
+main {
+  border-right: 1px solid #DCDCDC;
+  border-left: 1px solid #DCDCDC;
+}
+
+
 /* MAIN BANNER */
 .banner {
   padding: 2rem 0;
@@ -66,7 +90,6 @@ nav span {
 
 .banner img {
   width: 100%;
-  overflow: hidden;
 }
 
 .banner-content {
@@ -75,16 +98,90 @@ nav span {
   justify-content: center;
 }
 
-.banner-content h2 {
-  margin: 2.5rem 0 3.5rem 0;
+.banner-content h3 {
+  margin: 2rem 6rem 3rem 0;
 }
 
 .banner-content .button {
   max-width: 60%;
   color: white;
   background-color: #484848;
-  border: none;
   padding: .85rem 0;
   font-size: 1.2rem;
   text-align: center;
+  border-radius: 5px;
+}
+
+/* INFORMATION */
+.info-hero {
+  width: 60%;
+  margin: 0 1.5rem;
+  padding: 2rem 0;
+  flex-direction: column;
+}
+
+.info-hero-img img {
+  max-width: 100%;
+}
+
+.info-hero-text {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.info-hero-text h2 {
+  margin-bottom: 1.5rem;
+}
+
+.info-hero-text #quote {
+  flex-grow: 1;
+}
+
+.info-hero-text #cite {
+  font-size: .75rem;
+}
+
+.info-side {
+  border-left: 1px solid  #DCDCDC;
+  width: 40%;
+  padding: 2rem 0;
+}
+
+.info-item {
+  display: flex;
+}
+
+.info-item:hover {
+  background-color: #DCDCDC;
+}
+
+.info-item:nth-child(2) {
+  border-top: 4px solid #DCDCDC;
+  border-bottom: 4px solid #DCDCDC;
+}
+
+.info-img {
+  width: 35%;
+  margin: 1rem;
+}
+
+.info-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-text {
+  width: 60%;
+  margin: auto 0;
+}
+
+.info-text p {
+  margin: .5rem 0 1rem 0;
+}
+
+.info-text a {
+  font-size: .9rem;
+  color: darkgrey;
 }
