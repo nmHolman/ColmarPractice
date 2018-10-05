@@ -154,7 +154,7 @@ main {
 }
 
 .info-item:hover {
-  background-color: #DCDCDC;
+  background-color: #F2F2F2;
 }
 
 .info-item:nth-child(2) {
@@ -178,10 +178,50 @@ main {
 }
 
 .info-text p {
-  margin: .5rem 0 1rem 0;
+  margin: .5rem 0;
 }
 
 .info-text a {
   font-size: .9rem;
-  color: darkgrey;
+  color: #7C7C7C;
+}
+
+.info-text a:hover {
+  color: #404040;
+}
+
+/* COURSES */
+#courses {
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 4.5rem;
+  background-color: #DCDCDC;
+}
+
+.courses-title {
+  margin-bottom: 2rem;
+}
+
+.courses-desktop {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course {
+  width: 30%;
+  margin: 1rem 1rem;
+  background-color: white;
+}
+
+.course-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.course-info {
+  padding: 1rem 0 1.5rem 1rem;
+}
+
+.course-info p:nth-child(2) {
+  padding: .5rem 0;
 }
