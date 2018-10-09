@@ -5,6 +5,11 @@ html {
   color: #404040;
 }
 
+main {
+  border-right: 1px solid #f5f5f5;
+  border-left: 1px solid #f5f5f5;
+}
+
 .container {
   max-width: 1230px;
   margin: 0 auto;
@@ -14,7 +19,64 @@ html {
   display: flex;
 }
 
-h1  {
+.section-title {
+  margin-bottom: 2rem;
+}
+
+.section-content {
+  width: 60%;
+  margin: 0 1.5rem;
+  flex-direction: column;
+}
+
+.section-content-text {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.sidebar {
+  width: 40%;
+}
+
+.sidebar-item {
+  display: flex;
+}
+
+.sidebar-item:hover {
+  background-color: #F2F2F2;
+}
+
+.sidebar-img {
+  width: 35%;
+  margin: 1rem;
+}
+
+.sidebar-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sidebar-text {
+  width: 60%;
+  margin: auto 0;
+}
+
+.sidebar-text p {
+  margin: .5rem 0;
+}
+
+.sidebar-text a {
+  font-size: .9rem;
+  color: #7C7C7C;
+}
+
+.sidebar-text a:hover {
+  color: #404040;
+}
+
+h1 {
   font-size: 3rem;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
@@ -24,12 +86,14 @@ h1  {
 h2 {
   font-size: 2rem;
   font-family: 'Playfair Display', serif;
+  font-weight: bold;
   line-height: 1.25;
 }
 
 h3 {
   font-size: 1.25rem;
   line-height: 1.5;
+  font-weight: bold;
 }
 
 p {
@@ -37,73 +101,67 @@ p {
   line-height: 1.5;
 }
 
+/* NON-GLOBAL STYLING */
 /* HEADER */
-header {
+#header {
   height: 4rem;
   padding: 0 1.5rem;
   align-items: center;
   background-color: white;
 }
 
-.logo {
+#header .logo {
   align-items: center;
   height: 2rem;
   font-size: 1.25rem;
 }
 
-.logo-img img {
+#header .logo-img img {
   height: 3rem;
   padding-top: .25rem;
 }
 
-#colmar {
+#header #colmar {
   font-weight: bold;
 }
 
-nav {
+#header nav {
   flex-grow: 1;
   justify-content: flex-end;
   align-items: center;
 }
 
-nav span {
+#header nav span {
   margin-left: 1rem;
   font-size: 1rem;
 }
 
-/* MAIN */
-main {
-  border-right: 1px solid #f5f5f5;
-  border-left: 1px solid #f5f5f5;
-}
-
-
 /* MAIN BANNER */
-.banner {
+#banner {
   padding: 2rem 0;
   background-color: #f5f5f5;
 }
 
-.banner-img {
+#banner img {
+  width: 100%;
+}
+
+#banner .banner-img {
   margin: 0 1.5rem;
   width: 60%;
 }
 
-.banner img {
-  width: 100%;
-}
-
-.banner-content {
+#banner .banner-content {
   width: 40%;
   flex-direction: column;
   justify-content: center;
 }
 
-.banner-content h3 {
+#banner .banner-content h3 {
   margin: 2rem 6rem 3rem 0;
 }
 
-.banner-content .button {
+#banner .banner-content .button {
   max-width: 60%;
   color: white;
   background-color: #484848;
@@ -114,84 +172,36 @@ main {
 }
 
 /* INFORMATION */
-.info-hero {
-  width: 60%;
-  margin: 0 1.5rem;
+#info {
   padding: 2rem 0;
-  flex-direction: column;
 }
 
-.info-hero-img img {
+#info .section-content-media img {
   max-width: 100%;
 }
 
-.info-hero-text {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  margin-top: 2rem;
-}
-
-.info-hero-text h2 {
+#info .section-content-text h2 {
   margin-bottom: 1.5rem;
 }
 
-.info-hero-text #quote {
+#info .section-content-text #quote {
   flex-grow: 1;
 }
 
-.info-hero-text #cite {
+#info .section-content-text #cite {
   font-size: .75rem;
 }
 
-.info-side {
-  border-left: 1px solid  #f5f5f5;
-  width: 40%;
-  padding: 2rem 0;
-}
-
-.info-item {
-  display: flex;
-}
-
-.info-item:hover {
-  background-color: #F2F2F2;
-}
-
-.info-item:nth-child(2) {
+#info .sidebar-item:nth-child(2) {
   border-top: 4px solid #f5f5f5;
   border-bottom: 4px solid #f5f5f5;
 }
 
-.info-img {
-  width: 35%;
-  margin: 1rem;
+#info .sidebar {
+  border-left: 1px solid #f5f5f5;
 }
 
-.info-img img {
-  max-width: 100%;
-  height: auto;
-}
-
-.info-text {
-  width: 60%;
-  margin: auto 0;
-}
-
-.info-text p {
-  margin: .5rem 0;
-}
-
-.info-text a {
-  font-size: .9rem;
-  color: #7C7C7C;
-}
-
-.info-text a:hover {
-  color: #404040;
-}
-
-/* COURSES */
+/* START LEARNING / COURSES */
 #courses {
   flex-direction: column;
   align-items: center;
@@ -199,30 +209,41 @@ main {
   background-color: #f5f5f5;
 }
 
-.courses-title {
-  margin-bottom: 2rem;
-}
-
-.courses-desktop {
+#courses .courses-desktop {
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.course {
+#courses .course {
   width: 30%;
   margin: 1rem 1rem;
   background-color: white;
 }
 
-.course-img img {
+#courses .course-img img {
   max-width: 100%;
   height: auto;
 }
 
-.course-info {
+#courses .course-info {
   padding: 1rem 0 1.5rem 1rem;
 }
 
-.course-info p:nth-child(2) {
+#courses .course-info p:nth-child(2) {
   padding: .5rem 0;
+}
+
+/* THESIS EXHIBIT */
+#exhibit {
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#exhibit .section-content-media video {
+  max-width: 100%;
+}
+
+#exhibit .section-content-text h3 {
+  padding-bottom: .5rem;
 }

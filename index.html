@@ -14,7 +14,7 @@
 <body>
 
   <!-- HEADER SECTION -->
-  <header class="flex-container container">
+  <header id="header" class="flex-container container">
     <!-- LOGO -->
     <div class="logo flex-container">
       <div class="logo-img">
@@ -36,7 +36,7 @@
   <!-- MAIN SECTION -->
   <main class="container">
     <!-- MAIN BANNER -->
-    <section class="flex-container banner">
+    <section id="banner" class="flex-container">
       <div class="banner-img">
         <img src="resources/img/banner.jpg" alt="Students studying">
       </div>
@@ -51,44 +51,45 @@
 
     <!-- INFORMATION -->
     <section id="info" class="flex-container info">
-      <!-- HERO / MAIN INFO -->
-      <div class="flex-container info-hero">
-        <div class="info-hero-img">
+      <!-- INFORMATION MAIN CONTENT -->
+      <div class="flex-container section-content">
+        <div class="section-content-media">
           <img src="resources/img/information-main.jpg" alt="Man reading">
         </div>
-        <div class="info-hero-text">
+        <div class="section-content-text">
           <h2>It doesn't hurt to keep practicing</h2>
-          <p id="quote">"Nulla bibendum quam nec fermentum suscipit. Nullam nec fermentum nisl, sit amet dapibus mi. Morbi dignissim purus sagittis, tempor leo sed, dignissim libero. Morbi efficitur libero vitae magna consectetur, vel fringilla sapien iaculis. Suspendisse vel odio eget dolor efficitur tempor sit amet at enim."</p>
+          <p id="quote">"Nulla bibendum quam nec fermentum suscipit. Nullam nec fermentum nisl, sit amet dapibus mi. Morbi dignissim purus sagittis, tempor leo sed, dignissim libero. Morbi efficitur libero vitae magna consectetur, vel fringilla
+            sapien iaculis. Suspendisse vel odio eget dolor efficitur tempor sit amet at enim."</p>
           <p id="cite">Emanuel, Sr Strategist &#64; Hiring.com</p>
         </div>
       </div>
-      <!-- SIDEBAR INFO -->
-      <div class="info-side">
-        <div class="info-item">
-          <div class="info-img">
+      <!-- INFORMATION SIDEBAR -->
+      <div class="sidebar">
+        <div class="sidebar-item">
+          <div class="sidebar-img">
             <img src="resources/img/information-orientation.jpg" alt="Orientation picture">
           </div>
-          <div class="info-text">
+          <div class="sidebar-text">
             <h3>Orientation date</h3>
             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
             <a href="#">Read more</a>
           </div>
         </div>
-        <div class="info-item">
-          <div class="info-img">
+        <div class="sidebar-item">
+          <div class="sidebar-img">
             <img src="resources/img/information-campus.jpg" alt="Campus picture">
           </div>
-          <div class="info-text">
+          <div class="sidebar-text">
             <h3>Our Campus</h3>
             <p>Find a campus near you</p>
             <a href="#">Read more</a>
           </div>
         </div>
-        <div class="info-item">
-          <div class="info-img">
+        <div class="sidebar-item">
+          <div class="sidebar-img">
             <img src="resources/img/information-guest-lecture.jpg" alt="Oliver Sack picture">
           </div>
-          <div class="info-text">
+          <div class="sidebar-text">
             <h3>Our guest lecturer</h3>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
             <a href="#">Read more</a>
@@ -100,11 +101,10 @@
 
     <!-- COURSES -->
     <section id="courses" class="flex-container">
-      <div class="courses-title">
+      <div class="section-title">
         <h2>Start learning</h2>
       </div>
       <div class="flex-container courses-desktop">
-
         <div class="course">
           <div class="course-img">
             <img src="resources/img/course-software.jpg" alt="software engineering course image">
@@ -115,7 +115,6 @@
             <p>Web Development, Mobile Development, iOT, APIs</p>
           </div>
         </div>
-
         <div class="course">
           <div class="course-img">
             <img src="resources/img/course-computer-art.jpg" alt="computer art course image">
@@ -126,7 +125,6 @@
             <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
           </div>
         </div>
-
         <div class="course">
           <div class="course-img">
             <img src="resources/img/course-design.jpg" alt="design course image">
@@ -137,7 +135,6 @@
             <p>User Experience Design, User Research, Visual Design</p>
           </div>
         </div>
-
         <div class="course">
           <div class="course-img">
             <img src="resources/img/course-data.jpg" alt="data course image">
@@ -148,7 +145,6 @@
             <p>Data Science, Big Data, SQL, Data Visualization</p>
           </div>
         </div>
-
         <div class="course">
           <div class="course-img">
             <img src="resources/img/course-business.jpg" alt="business course image">
@@ -159,7 +155,6 @@
             <p>Product Development, Business Development, Startup</p>
           </div>
         </div>
-
         <div class="course">
           <div class="course-img">
             <img src="resources/img/course-marketing.jpg" alt="marketing course image">
@@ -170,13 +165,50 @@
             <p>Analytics, Content Marketing, Mobile Marketing</p>
           </div>
         </div>
-
       </div>
     </section>
 
-    <!-- EXHIBIT -->
-    <section>
-
+    <!-- THESIS EXHIBIT -->
+    <section id="exhibit" class="flex-container exhibit">
+      <div class="section-title">
+        <h2>Thesis exhibit</h2>
+      </div>
+      <div class="flex-container exhibit-content">
+        <!-- VIDEO -->
+        <div class="flex-container section-content">
+          <div class="section-content-media">
+            <video src="resources/vid/thesis.mp4" controls>
+              Sorry, your browser does not support this video.
+            </video>
+          </div>
+          <div class="section-content-text">
+            <h3>Reimagine urban</h3>
+            <p id="quote">"Nulla bibendum quam nec fermentum suscipit. Nullam nec fermentum nisl, sit amet dapibus mi. Morbi dignissim purus sagittis, tempor leo sed, dignissim libero. Morbi efficitur libero vitae magna consectetur, vel fringilla
+              sapien iaculis. Suspendisse vel odio eget dolor efficitur tempor sit amet at enim."</p>
+          </div>
+        </div>
+        <!-- EXHIBIT SIDEBAR -->
+        <div class="sidebar">
+          <div class="sidebar-item">
+            <div class="sidebar-img">
+              <img src="resources/img/thesis-fisma.jpg" alt="Fisma thesis picture">
+            </div>
+            <div class="sidebar-text">
+              <h3>Fisma: Design and Prototype</h3>
+              <p>Designer showcase of new prototype product</p>
+            </div>
+          </div>
+          <div class="sidebar-item">
+            <div class="sidebar-img">
+              <img src="resources/img/thesis-now-and-then.jpg" alt="Now and Then thesis picture">
+            </div>
+            <div class="sidebar-text">
+              <h3>Now and Then</h3>
+              <p>Research study about New York</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
