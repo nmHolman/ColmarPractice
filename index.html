@@ -43,9 +43,11 @@
       <div class="banner-content flex-container">
         <h1>Learn something new everyday</h1>
         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-        <div class="button" role="button">
-          <span>Start Here</span>
-        </div>
+        <a href="#" target="_blank">
+          <div class="button" role="button">
+            <span>Start Here</span>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -177,7 +179,7 @@
         <!-- VIDEO -->
         <div class="flex-container section-content">
           <div class="section-content-media">
-            <video src="resources/vid/thesis.mp4" controls>
+            <video src="resources/vid/thesis.mp4" autoplay loop muted>
               Sorry, your browser does not support this video.
             </video>
           </div>
@@ -213,8 +215,18 @@
   </main>
 
   <!-- FOOTER SECTION -->
-  <footer>
+  <footer id="footer" class="container">
+    <div class="footer-content flex-container">
+      <div class="copyright">
+        <span>&copy; 2016 Colmar Academy. All rights reserved</span>
+      </div>
+      <div class="disclaimers">
+        <span><a href="#">Terms</a></span>
+        <span><a href="#">Privacy</a></span>
+      </div>
+    </div>
   </footer>
+
 </body>
 
 </html>

@@ -5,11 +5,6 @@ html {
   color: #404040;
 }
 
-main {
-  border-right: 1px solid #f5f5f5;
-  border-left: 1px solid #f5f5f5;
-}
-
 .container {
   max-width: 1230px;
   margin: 0 auto;
@@ -42,6 +37,7 @@ main {
 
 .sidebar-item {
   display: flex;
+  transition: background-color 0.5s;
 }
 
 .sidebar-item:hover {
@@ -70,6 +66,7 @@ main {
 .sidebar-text a {
   font-size: .9rem;
   color: #7C7C7C;
+  transition: color .25s;
 }
 
 .sidebar-text a:hover {
@@ -125,15 +122,25 @@ p {
   font-weight: bold;
 }
 
+#header #academy {
+  color: #7C7C7C;
+}
+
 #header nav {
   flex-grow: 1;
   justify-content: flex-end;
   align-items: center;
 }
 
-#header nav span {
+#header nav span a {
   margin-left: 1rem;
   font-size: 1rem;
+  transition: color .25s;
+  color: #7C7C7C;
+}
+
+#header nav span a:hover {
+  color: #404040;
 }
 
 /* MAIN BANNER */
@@ -163,12 +170,22 @@ p {
 
 #banner .banner-content .button {
   max-width: 60%;
-  color: white;
-  background-color: #484848;
+  color: #484848;
+  font-weight: bold;
+  background-color: #f5f5f5;
   padding: .85rem 0;
   font-size: 1.2rem;
   text-align: center;
   border-radius: 5px;
+  border: 3px solid #484848;
+  transition: color 0.5s, background-color 0.5s, font-weight 0.5s;
+}
+
+#banner .banner-content .button:hover {
+  color: #ffffff;
+  font-weight: normal;
+  background-color: #484848;
+  border: 3px solid #484848;
 }
 
 /* INFORMATION */
@@ -246,4 +263,25 @@ p {
 
 #exhibit .section-content-text h3 {
   padding-bottom: .5rem;
+}
+
+/* FOOTER */
+#footer {
+  border-top: 1px solid #f5f5f5;
+}
+
+#footer .footer-content {
+  padding: 1rem 1.5rem 3rem 1rem;
+  align-items: center;
+  font-size: .75rem;
+  color: #7C7C7C;
+}
+
+#footer .copyright {
+  flex-grow: 1;
+}
+
+#footer .disclaimers a {
+  color: #7C7C7C;
+  padding-left: .5rem;
 }
