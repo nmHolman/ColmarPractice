@@ -74,27 +74,27 @@ html {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.25rem;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   line-height: 1;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   line-height: 1.25;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   font-weight: bold;
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -306,7 +306,6 @@ p {
 
 /* SCREENS SMALLER THAN 800PX */
 @media only screen and (max-width: 800px) {
-
   .container {
     width: 100%;
   }
@@ -345,12 +344,15 @@ p {
     padding: 2rem 1rem;
   }
 
-
   #banner .banner-content .button {
     max-width: 100%;
     color: #484848;
     font-weight: bold;
     background-color: #f5f5f5;
+  }
+
+  #info {
+    padding: 1rem 1rem 2rem 1rem;
   }
 
   #info .section-content {
@@ -359,18 +361,11 @@ p {
 
   #info .sidebar {
     width: 100%;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border: none;
   }
 
   #info .sidebar .sidebar-item {
-    width: 100%;
     flex-direction: column;
-    border: 1px solid pink;
-    align-items: center;
   }
 
   #info .sidebar .desktop-img {
@@ -380,11 +375,29 @@ p {
   #info .sidebar .mobile-img {
     display: block;
     width: 100%;
+    margin: 0;
   }
 
   #info .sidebar .sidebar-img img {
-    width: auto;
-    height: 50%;
+    width: 100%;
+  }
+
+  #info .sidebar .sidebar-text {
+    padding: 1rem 0 2rem 1rem;
+  }
+
+  .sidebar-item:hover {
+    background-color: white;
+  }
+
+  #courses {
+    align-items: stretch;
+    padding: 2rem 1rem;
+  }
+
+  #courses .section-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
   }
 
   #courses .courses-desktop {
@@ -394,7 +407,45 @@ p {
   #courses .courses-mobile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
+  #courses .courses-mobile h3 {
+    background-color: #dcdcdc;
+    padding: 1rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #exhibit {
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  #exhibit .section-title {
+    margin-bottom: 1rem;
+  }
+
+  #exhibit .section-content {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  #exhibit .section-content .section-content-text {
+    display: none;
+  }
+
+  #exhibit .sidebar {
+    display: none;
+  }
+
+  #footer {
+    border: none;
+  }
+
+  #footer .footer-content {
+    padding: 1rem 0 1rem 1rem;
+    font-size: 1rem;
+  }
+
+  #footer .footer-content .disclaimers {
+    display: none;
+  }
 }
