@@ -352,9 +352,10 @@ p {
 
   #banner .banner-content .button {
     max-width: 100%;
-    color: #F5F5F5;
+    color: #f5f5f5;
     font-weight: normal;
-    background-color: #484848;
+    background-color: #4B4E50;
+    border-radius: 0px;
   }
 
   #info {
