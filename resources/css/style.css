@@ -96,8 +96,8 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.15rem;
+  line-height: 1.25;
 }
 
 /* NON-GLOBAL STYLING */
@@ -143,7 +143,7 @@ p {
 
 #header nav span a {
   margin-left: 1rem;
-  font-size: 1rem;
+  font-size: 1.15rem;
   transition: color .25s;
   color: #7C7C7C;
 }
@@ -218,7 +218,8 @@ p {
 }
 
 #info .section-content-text #cite {
-  font-size: .75rem;
+  font-size: 1rem;
+  padding-top: 1rem;
 }
 
 #info .sidebar-item:nth-child(2) {
