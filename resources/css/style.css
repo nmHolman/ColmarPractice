@@ -11,6 +11,8 @@ html {
 }
 
 .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -21,13 +23,23 @@ html {
 .section-content {
   width: 60%;
   margin: 0 1.5rem;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .section-content-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-grow: 1;
-  flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 2rem;
 }
 
@@ -36,7 +48,10 @@ html {
 }
 
 .sidebar-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
 
@@ -66,6 +81,7 @@ html {
 .sidebar-text a {
   font-size: .9rem;
   color: #7C7C7C;
+  -webkit-transition: color .25s;
   transition: color .25s;
 }
 
@@ -104,12 +120,16 @@ p {
 /* HEADER */
 #header {
   height: 4rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
 }
 
 #header .logo {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 2rem;
   font-size: 1.25rem;
   padding-left: 1.5rem;
@@ -135,15 +155,22 @@ p {
 }
 
 #header nav {
-  flex-grow: 1;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-right: 1.5rem;
 }
 
 #header nav span a {
   margin-left: 1rem;
   font-size: 1.15rem;
+  -webkit-transition: color .25s;
   transition: color .25s;
   color: #7C7C7C;
 }
@@ -173,8 +200,13 @@ p {
 
 #banner .banner-content {
   width: 40%;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #banner .banner-content h3 {
@@ -191,6 +223,7 @@ p {
   text-align: center;
   border-radius: 5px;
   border: 3px solid #4B4E50;
+  -webkit-transition: color 0.5s, background-color 0.5s, font-weight 0.5s, border 0.5s;
   transition: color 0.5s, background-color 0.5s, font-weight 0.5s, border 0.5s;
 }
 
@@ -214,7 +247,9 @@ p {
 }
 
 #info .section-content-text #quote {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 #info .section-content-text #cite {
@@ -237,15 +272,23 @@ p {
 
 /* START LEARNING / COURSES */
 #courses {
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2rem 4.5rem;
   background-color: #f5f5f5;
 }
 
 #courses .courses-desktop {
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #courses .courses-mobile {
@@ -273,8 +316,13 @@ p {
 
 /* THESIS EXHIBIT */
 #exhibit {
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2rem 0;
 }
 
@@ -293,13 +341,17 @@ p {
 
 #footer .footer-content {
   padding: 1rem 1.5rem 3rem 1rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: .75rem;
   color: #7C7C7C;
 }
 
 #footer .copyright {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 #footer .disclaimers a {
@@ -326,8 +378,12 @@ p {
   }
 
   #header .nav-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   #header .nav-mobile img {
@@ -336,7 +392,10 @@ p {
   }
 
   #banner {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 100%;
     padding: 0;
   }
@@ -373,7 +432,10 @@ p {
   }
 
   #info .sidebar .sidebar-item {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   #info .sidebar .desktop-img {
@@ -399,7 +461,9 @@ p {
   }
 
   #courses {
-    align-items: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     padding: 2rem 1rem;
   }
 
@@ -413,8 +477,13 @@ p {
   }
 
   #courses .courses-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   #courses .courses-mobile h3 {
